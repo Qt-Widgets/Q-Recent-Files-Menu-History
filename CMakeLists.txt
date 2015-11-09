@@ -3,9 +3,9 @@ project(QRecentFilesMenu)
 
 find_package(Qt5 REQUIRED COMPONENTS Core Widgets)
 
-add_library(QRecentFilesMenu "${CMAKE_CURRENT_SOURCE_DIR}/QRecentFilesMenu.cpp")
+add_library(QRecentFilesMenu STATIC "${CMAKE_CURRENT_SOURCE_DIR}/QRecentFilesMenu.cpp")
 
 set_property(TARGET QRecentFilesMenu APPEND
-			 PROPERTY INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}")
+             PROPERTY INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}")
 
 target_link_libraries(QRecentFilesMenu Qt5::Core Qt5::Widgets)
