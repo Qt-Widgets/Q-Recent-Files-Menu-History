@@ -4,7 +4,7 @@
 #include <QMenu>
 #include <QStringList>
 
-class QRecentFilesMenu : public QMenu
+class QRecentFilesMenu final : public QMenu
 {
     Q_OBJECT
     Q_PROPERTY(int maxCount READ maxCount WRITE setMaxCount)
