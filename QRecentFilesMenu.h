@@ -47,7 +47,7 @@ public:
      */
     bool restoreState(const QByteArray &state);
 
-public slots:
+public Q_SLOTS:
     //!
     void addRecentFile(const QString &fileName);
 
@@ -60,7 +60,7 @@ signals:
     //! This signal is emitted when a recent file in this menu is triggered.
     void recentFileTriggered(const QString & filename);
 
-private slots:
+private Q_SLOTS:
     void menuTriggered(QAction*);
     void updateRecentFileActions();
 private:

@@ -15,7 +15,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow();
     ~MainWindow();
-private slots:
+private Q_SLOTS:
     void open();
     void loadFile(const QString &fileName);
 
